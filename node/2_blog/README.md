@@ -1,4 +1,4 @@
-Blog project for M101JS
+Blog project
 
 ./app.js - entry point
 ./package.json - npm package description

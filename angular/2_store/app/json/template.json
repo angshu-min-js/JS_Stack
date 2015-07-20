@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Template1",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_1.jpg"
+      },
+      {
+        "name": "image_2.jpg"
+      },
+      {
+        "name": "image_3.jpg"
+      },
+      {
+        "name": "image_4.jpg"
+      }
+
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Template2",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_2.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 3,
+    "name": "Template3",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_3.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 4,
+    "name": "Template4",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_4.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 5,
+    "name": "Template5",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_5.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 6,
+    "name": "Template6",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_6.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 7,
+    "name": "Template7",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_7.jpg"
+      }
+    ],
+    "soldout": true
+  },
+  {
+    "id": 8,
+    "name": "Template8",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 299,
+    "images": [
+      {
+        "name": "image_8.jpg"
+      }
+    ],
+    "soldout": true
+  }
+]

@@ -1,0 +1,66 @@
+<section data-ng-controller="JobsController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1>Edit Job</h1>
+	</div>
+	<div class="col-md-12">
+		<form name="jobForm" class="form-horizontal" data-ng-submit="update(jobForm.$valid)" novalidate>
+			<fieldset>
+				<div class="form-group" ng-class="{ 'has-error': jobForm.title.$dirty && jobForm.title.$invalid }">
+					<label class="control-label" for="title">Title</label>
+					<div class="controls">
+						<input name="title" type="text" data-ng-model="job.title" id="title" class="form-control" placeholder="Title" required>
+					</div>
+				</div>
+				<div class="form-group" ng-class="{ 'has-error': jobForm.company.$dirty && jobForm.company.$invalid }">
+					<label class="control-label" for="company">Company</label>
+					<div class="controls">
+						<input name="company" type="text" data-ng-model="job.company" id="company" class="form-control" placeholder="Company" required>
+					</div>
+				</div>
+				<div class="form-group" ng-class="{ 'has-error': jobForm.description.$dirty && jobForm.description.$invalid }">
+					<label class="control-label" for="description">Description</label>
+					<div class="controls">
+						<input name="description" type="text" data-ng-model="job.description" id="description" class="form-control" placeholder="Description">
+					</div>
+				</div>
+					<div class="form-group" ng-class="{ 'has-error': jobForm.requirements.$dirty && jobForm.requirements.$invalid }">
+						<label class="control-label" for="requirements">Requirements</label>
+						<div class="controls">
+							<input name="requirements" type="text" data-ng-model="job.requirements" id="requirements" class="form-control" placeholder="Requirements">
+						</div>
+					</div>
+						<div class="form-group" ng-class="{ 'has-error': jobForm.hourly_wage.$dirty && jobForm.hourly_wage.$invalid }">
+							<label class="control-label" for="hourly_wage">Hourly Wage</label>
+							<div class="controls">
+								<input name="hourly_wage" type="text" data-ng-model="job.hourly_wage" id="hourly_wage" class="form-control" placeholder="Hourly Wage">
+							</div>
+						</div>
+						<div class="form-group">
+						<label class="control-label" for="state">State</label>
+						<div class="controls">
+							<select name="state" data-ng-model="job.state" id="state" class="form-control">
+						<option value="A&N">Andaman and Nicobar Islands</option><option value="AP">Andhra Pradesh</option><option value="AR">Arunachal Pradesh</option><option value="AS">Assam</option><option value="BR">Bihar</option><option value="CG">Chhattisgarh</option><option value="DH">Dadra and Nagar Haveli</option>
+						<option value="DD">Daman and Diu</option><option value="DL">Delhi</option><option value="GA">Goa</option><option value="GJ">Gujarat</option><option value="HR">Haryana</option><option value="HP">Himachal Pradesh</option><option value="JK">Jammu and Kashmir</option>
+						<option value="JH">Jharkhand</option><option value="KA">Karnataka</option><option value="KL">Kerala</option><option value="LD">Lakshadweep</option><option value="MP">Madhya Pradesh</option><option value="MH">Maharashtra</option><option value="MN">Manipur</option>
+						<option value="ML">Meghalaya</option><option value="MZ">Mizoram</option><option value="NL">Nagaland</option><option value="OR">Odisha</option><option value="PY">Pondicherry</option><option value="PB">Punjab</option><option value="RJ">Rajasthan</option>
+						<option value="SK">Sikkim</option><option value="TN">Tamil Nadu</option><option value="TL">Telangana</option><option value="TR">Tripura</option><option value="UP">Uttar Pradesh</option><option value="UK">Uttarakhand</option>
+						<option value="WB">West Bengal</option><option value="CH">Chandigarh</option></select>
+						</div>
+						</div>
+						<div class="form-group" ng-class="{ 'has-error': jobForm.contact_email.$dirty && jobForm.contact_email.$invalid }">
+							<label class="control-label" for="contact_email">Contact Email</label>
+							<div class="controls">
+								<input name="contact_email" type="email" data-ng-model="job.contact_email" id="contact_email" class="form-control" placeholder="Contact Email">
+							</div>
+						</div>
+
+				<div class="form-group">
+					<input type="submit" class="btn btn-default">
+				</div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</section>

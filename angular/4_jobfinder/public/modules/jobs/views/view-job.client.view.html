@@ -1,0 +1,27 @@
+<section data-ng-controller="JobsController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="job.title"></h1>
+		<div class="span12">
+									<span class="job_info_sep">Company:{{job.company}}</span<span class="job_info_sep">&nbsp;&nbsp;|&nbsp;&nbsp;Location:</span>&nbsp;&nbsp;{{job.state}}&nbsp;&nbsp;<span class="job_info_sep">|</span>&nbsp;&nbsp;<span data-ng-bind="job.created | date:'mediumDate'"></span>
+									<a href="/#!"class="pull-right"><span>←&nbsp;</span><span class="lnk-title">Back</span></a>
+		</div>
+	</div>
+	<div class="pull-right" data-ng-show="authentication.user._id == job.user._id">
+		<a class="btn btn-primary" href="/#!/jobs/{{job._id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-primary" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+
+	<h3>Job Description</h3>
+	<p>{{job.description}}</p>
+
+	<p><strong>Requirements:</strong></p>
+	<ol>
+						<li>{{job.requirements}}</li>
+					</ol>
+	<p><strong>Salary: </strong>{{job.hourly_wage | currency}} per hour</p>
+	<p><strong>Contact Email: </strong>{{job.contact_email}}</p>
+</section>

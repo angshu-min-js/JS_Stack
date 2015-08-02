@@ -1,0 +1,50 @@
+<section data-ng-controller="HomeController">
+	<div class="jumbotron text-center">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+				<img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/img/brand/logo.png" />
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<p class="lead">
+				Register to find your dream job!
+			</p>
+		</div>
+		<div class="row">
+			<p>
+				<a class="btn btn-primary btn-lg" href="/#!/signup" data-ng-hide="authentication.user">Register Now</a>
+				<div data-ng-if="authentication.user"><strong>Welcome, <span data-ng-bind="authentication.user.displayName"></span></strong></div>
+			</p>
+		</div>
+	</div>
+	<div>
+	<div class="row">
+		<div class="col-md-3">
+			<h2>
+				<strong>M</strong>ongoDB Jobs
+			</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</div>
+		<div class="col-md-3">
+			<h2>
+				<strong>E</strong>xpress Jobs
+			</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</div>
+		<div class="col-md-3">
+			<h2>
+				<strong>A</strong>ngularJS Jobs
+			</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo..</p>
+		</div>
+		<div class="col-md-3">
+			<h2>
+				<strong>N</strong>ode.js Jobs
+			</h2>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</div>
+	</div>
+	<br>Enjoy &amp; Keep yourself ahead,
+	<br>The GetJob Team.
+</section>

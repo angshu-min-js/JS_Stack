@@ -1,0 +1,18 @@
+{
+  "name": "instaphoto",
+  "version": "0.0.1",
+  "description": "An App to get images from instagram",
+  "main": "server.js",
+  "repository": "",
+  "license": "MIT",
+  "author": "Angshuman Gupta <angshu.gupta789@gmail.com>",
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "morgan": "*",
+    "bower": "*",
+    "method-override": "*"
+  }
+}

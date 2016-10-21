@@ -1,6 +1,6 @@
 DashboardController = AppController.extend({
   waitOn: function() {
-    return this.subscribe('items');
+    return this.subscribe('mymeetups');
   },
   data: {
     items: Items.find({})

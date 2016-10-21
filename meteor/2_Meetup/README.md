@@ -35,3 +35,4 @@ sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/loca
 - Submit add.html: event, controller--> addMeetup -->methods/meetups.js
 - meteor update iron:middleware-stack
 - adding the bootstrap modal--> meetups
+- dashboard client, controller, publications

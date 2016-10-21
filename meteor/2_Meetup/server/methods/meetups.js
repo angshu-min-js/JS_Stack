@@ -8,5 +8,8 @@ Meteor.methods({
     },{
       $set:params
     });
+  },
+  'removeMeetup': function(id){
+    Meetups.remove(id);
   }
 });

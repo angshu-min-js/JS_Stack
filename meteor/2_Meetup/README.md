@@ -31,3 +31,5 @@ sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/loca
 - publications/methods: meetups.js
 - client/templates: add/add.html + js
 - meteor add tsega:bootstrap3-datetimepicker
+- add.html, add.js--> jQuery: datetimepicker
+- Submit add.html: event, controller--> addMeetup

@@ -7,6 +7,11 @@ Router.route('/dashboard', {
   controller: 'DashboardController'
 });
 
+Router.route('/meetups', {
+  name: 'meetups',
+  controller: 'MeetupsController'
+});
+
 Router.plugin('ensureSignedIn', {
   only: ['dashboard']
 });

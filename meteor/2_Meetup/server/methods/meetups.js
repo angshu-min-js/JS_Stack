@@ -1,5 +1,5 @@
 Meteor.methods({
-  'Meetups.insert': function (params) {
+  'addMeetup.insert': function (params) {
     Meetups.insert(params);
   }
 });

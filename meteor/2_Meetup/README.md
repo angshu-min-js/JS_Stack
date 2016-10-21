@@ -18,4 +18,5 @@ sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/loca
 ```
 - both/router/meta.js: title, suffix
 - client/templates/layouts/: header and footer
-- client/stylesheets/base
+- client/stylesheets/base: custom.less
+- client/templates/home/home.html: homepage

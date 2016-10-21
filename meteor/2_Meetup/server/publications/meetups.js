@@ -1,3 +1,3 @@
-Meteor.publishComposite("meetups", function() {
+Meteor.publish('meetups', function() {
   return Meetups.find();
 });

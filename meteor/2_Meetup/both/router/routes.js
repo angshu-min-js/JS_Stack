@@ -13,10 +13,10 @@ Router.route('/meetups', {
 });
 
 Router.route('/meetups/add', {
-  name: 'addMeetups',
+  name: 'addMeetup',
   controller: 'MeetupsController'
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['dashboard', 'addMeetups']
+  only: ['dashboard','addMeetup']
 });

@@ -1,13 +1,13 @@
 Meetups.allow({
-  /*
-  'insert': function(userId, doc) {
-    return userId;
+
+  'insert': function() {
+    return true;
   },
-  'update': function(userId, doc, fields, modifier) {
-    return userId;
+  'update': function() {
+    return true;
   },
-  'remove': function(userId, doc) {
-    return userId;
+  'remove': function() {
+    return true;
   }
-  */
+
 });

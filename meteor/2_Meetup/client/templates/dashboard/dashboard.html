@@ -5,7 +5,7 @@
     </div>
 
     <ul class="list-group">
-      {{#each meetups}}
+      {{#each mymeetups}}
         <li class="list-group-item"><a data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a> <span class="label label-default">{{ city }}, {{ state }}</span></li>
 
         <!-- Modal -->
@@ -34,7 +34,7 @@
         </div>
 
         {{else}}
-        <p>No meetups, Bro!</p>
+        <p>Yo, you have not added any meetups!</p>
       {{/each}}
     </ul>
 

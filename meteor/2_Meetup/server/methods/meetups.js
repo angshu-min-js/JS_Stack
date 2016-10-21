@@ -3,7 +3,7 @@ Meteor.methods({
     Meetups.insert(params);
   },
   'updateMeetup': function(id, params){
-    Meteor.update({
+    Meetups.update({
       _id: id
     },{
       $set:params

@@ -28,3 +28,4 @@ sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/loca
 - client/templates: meetups/meetups.html
 - server/methods: meetups.js
 - permissions/methods: meetups.js
+- publications/methods: meetups.js

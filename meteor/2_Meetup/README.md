@@ -20,3 +20,4 @@ sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/loca
 - client/templates/layouts/: header and footer
 - client/stylesheets/base: custom.less
 - client/templates/home/home.html: homepage
+- changing login: both/accounts/config.js, https://github.com/meteor-useraccounts/core/blob/master/Guide.md

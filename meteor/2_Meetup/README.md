@@ -13,7 +13,7 @@ end
 
 #VM Box
 mkdir -p myapp/.meteor/local
+#Always
 sudo mount --bind /home/vagrant/myapp/.meteor/local/ /vagrant/myapp/.meteor/local/
 ```
-- Get VM Local IP
 - both/router/meta.js: title, suffix

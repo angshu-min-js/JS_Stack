@@ -1,3 +1,3 @@
 Template.addMeetup.onRendered(function(){
-  this.$('datatimepicker'.datetimepicker();)
-})
+  this.$('datatimepicker').datetimepicker();
+});

@@ -18,5 +18,5 @@ Router.route('/meetups/add', {
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['dashboard']
+  only: ['dashboard', 'addMeetups']
 });

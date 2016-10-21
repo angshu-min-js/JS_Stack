@@ -38,5 +38,10 @@ MeetupsController.events({
         meetupdate: meetupdate,
         createdAt: new Date()
     }
+
+    // insert meetups
+    Meteor.call('addMeetup', params);
+    toastr.success('Meetup Added');
+    return false; //stop the form from submitting
   }
 });

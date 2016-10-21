@@ -17,18 +17,18 @@
                 <h4 class="modal-title" id="modal{{_id}}Label">Edit Meetup</h4>
               </div>
               <div class="modal-body">
-                <form class="add-meetup-form">
+                <form class="update-meetup-form">
                   <div class="form-group">
                       <label>Meetup Title</label>
-                      <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                      <input type="text" class="form-control" id="title" name="title" value="{{title}}" placeholder="Title">
                   </div>
                   <div class="form-group">
                       <label>Contact Email</label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                      <input type="email" class="form-control" id="email" name="email" value="{{email}}" placeholder="Email">
                   </div>
                   <div class="form-group">
                       <label>Topics</label>
-                      <input type="text" class="form-control" id="topics" name="topics" placeholder="Topics (eg. Programming, design, gadgets...)">
+                      <input type="text" class="form-control" id="topics" name="topics" value="{{topics}}" placeholder="Topics (eg. Programming, design, gadgets...)">
                   </div>
                   <div class="form-group">
                       <label>Type</label>
@@ -42,26 +42,28 @@
                       <label>Meetup Date</label>
                       <div class="input-group datetimepicker">
                           <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                          <input class="set-due-date form-control" id="meetupdate" name="meetupdate" type="text"/>
+                          <input class="set-due-date form-control" id="meetupdate" name="meetupdate" value="{{meetupdate}}"  type="text"/>
                       </div>
                   </div>
                   <div class="form-group">
                       <label>Address</label>
-                      <input class="form-control" id="address" name="address" type="text" placeholder="Street Address"/>
+                      <input class="form-control" id="address" name="address" value="{{address}}"  type="text" placeholder="Street Address"/>
                   </div>
                   <div class="form-group">
                       <label>City</label>
-                      <input class="form-control" id="city" name="city" type="text" placeholder="City"/>
+                      <input class="form-control" id="city" name="city" value="{{city}}"  type="text" placeholder="City"/>
                   </div>
                   <div class="form-group">
                       <label>State</label>
-                      <input class="form-control" id="state" name="state" type="text" placeholder="State"/>
+                      <input class="form-control" id="state" name="state" value="{{state}}"  type="text" placeholder="State"/>
                   </div>
                   <div class="form-group">
                       <label>Zip</label>
-                      <input class="form-control" id="zipcode" name="zipcode" type="text" placeholder="ZipCode"/>
+                      <input class="form-control" id="zipcode" name="zipcode" value="{{zipcode}}"  type="text" placeholder="ZipCode"/>
                   </div>
-                  <button type="submit" class="btn btn-primary">Add Meetup</button>
+                  <input type="hidden" name="id" id="id" value="{{_id}}">
+                  <button type="submit" class="btn btn-primary">Update Meetup</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </form>
               </div>
               <div class="modal-footer">

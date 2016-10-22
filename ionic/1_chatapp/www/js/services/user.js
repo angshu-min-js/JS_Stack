@@ -75,7 +75,7 @@ app.service('UserService', function ($q, $rootScope, $localstorage, $ionicPopup,
 						// We are logged in so now authenticate via firebase
 						//
 
-						/*
+
 						console.log('Authenticating with firebase');
 						var auth = $firebaseAuth();
 						var credential = firebase.auth.FacebookAuthProvider.credential(token);
@@ -96,7 +96,7 @@ app.service('UserService', function ($q, $rootScope, $localstorage, $ionicPopup,
 								});
 								d.reject(error);
 							});
-							*/
+						
 
 					} else {
 						//

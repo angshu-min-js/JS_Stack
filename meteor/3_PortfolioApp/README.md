@@ -5,4 +5,7 @@ meteor add iron:router mrt:flash-messages account-ui account-password twbs:boots
 ```
 - Static Pages
 - Routes
-- 
+- addposts, addprojects
+- ''' $ meteor add aldeed:collection2 '''
+- ''' $ meteor add cfs:standard-packages '''
+- ''' $ meteor add cfs:gridfs ''''

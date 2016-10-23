@@ -3,3 +3,6 @@
 ```
 meteor add iron:router mrt:flash-messages account-ui account-password twbs:bootstrap
 ```
+- Static Pages
+- Routes
+- 

@@ -96,7 +96,7 @@ app.service('UserService', function ($q, $rootScope, $localstorage, $ionicPopup,
 								});
 								d.reject(error);
 							});
-						
+
 
 					} else {
 						//

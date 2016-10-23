@@ -10,7 +10,7 @@ var app = angular.module('tvchat', [
 	'tvchat.utils'
 ]);
 
-//app.constant("FIREBASE_URL", 'chatapp-4d8e5.firebaseapp.com');
+app.constant("FIREBASE_URL", 'chatapp-4d8e5.firebaseapp.com');
 app.constant("FACEBOOK_APP_ID", '1262320547160511');
 
 

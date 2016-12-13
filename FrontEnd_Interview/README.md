@@ -178,4 +178,210 @@ function LList() {
  this.remove = remove;
  this.display = display;
 }
+
+function find(item) {
+ var currNode = this.head;
+ while (currNode.element != item) {
+ currNode = currNode.next;
+ }
+ return currNode;
+}
+
+function insert(newElement, item) {
+ var newNode = new Node(newElement);
+ var current = this.find(item);
+ newNode.next = current.next;
+ current.next = newNode;
+}
+
+function display() {
+ var currNode = this.head;
+ while (!(currNode.next == null)) {
+ print(currNode.next.element);
+ currNode = currNode.next;
+ }
+}
+```
+
+### Dictionary
+
+```Javascript
+function Dictionary(){
+  this.add = add;
+  this.data = new Array();
+  this.find = find;
+  this.remove = remove;
+  this.showAll = showAll;
+}
+function add(key, value){
+  this.data[key] = value;
+}
+function remove(key){
+  delete this.data[key];
+}
+function find(key) {
+ return this.datastore[key];
+}
+function showAll(){
+  forEach(var key in Object.keys(this.data))
+  {
+    print(key + " -> " + this.data[key]);
+  }
+}
+```
+
+### BST
+
+```Javascript
+function Node(data, left, right) {
+ this.data = data;
+ this.left = left;
+ this.right = right;
+ this.show = show;
+}
+function show() {
+ return this.data;
+}
+
+function insert(data) {
+ var n = new Node(data, null, null);
+ if (this.root == null) {
+ this.root = n;
+ }
+ else {
+ var current = this.root;
+ var parent;
+ while (true) {
+ parent = current;
+ if (data < current.data) {
+ current = current.left;
+ if (current == null) {
+ parent.left = n;
+ break;
+ }
+ }
+ else {
+ current = current.right;
+ if (current == null) {
+ parent.right = n;
+ break;
+ }
+ }
+ }
+ }
+}
+```
+
+### Graphs
+```Javascript
+function Graph(v) {
+ this.vertices = v;
+ this.edges = 0;
+ this.adj = [];
+ for (var i = 0; i < this.vertices; ++i) {
+ this.adj[i] = [];
+ this.adj[i].push("");
+ }
+ this.addEdge = addEdge;
+ this.toString = toString;
+}
+```
+
+### Merge Sort
+
+```Javascript
+function MergeSort(arr){
+  if(arr.length<2) return arr;
+  var mid = Math.floor(arr.length/2)
+  var l = MergeSort(arr.slice(0,mid))
+  var r = MergeSort(arr.slice(mid))
+  return merge(l,r);
+}
+
+function merge(r,l){
+  var result = [];
+  while(r.length>0 && l.length>0)
+    result.push(a[0]<b[0]?a.shift():b.shift())
+  return result.concat(a.length?a:b);
+}
+```
+
+### Binary Search
+
+```Javascript
+function binSearch(arr, data){
+  var u = arr.length-1;
+  var l = 0;
+  while(l<=u){
+    var mid = Math.floor((l+u)/2);
+    if(arr[mid]<data){
+      l = mid+1;
+    }
+    else if(arr[mid]>data){
+      u=mid-1;
+    }
+    else{
+      return mid;
+    }
+    }
+    return -1;
+  }
+}
+```
+
+### Concepts
+
+- Prototype
+
+```Javascript
+function Person(name){
+  this.name=name;
+}
+Person.prototype.walk = function(){
+  console.log(this.name+ "  something");
+}
+var person = new Person("Angshu");
+person.walk();
+```
+
+- Currying -> step wise argument passing as function
+
+```Javascript
+let something =
+  name=> //function1
+    name2=> //function2
+      name3=> //function3
+        name + name2 + name3 //return Output
+
+console.log(something('A')('B')('C'))
+//ABC
+```
+- Promises -> bit more powerfull than callbacks
+- Factory function -> Factory of objects
+
+```Javascript
+const dog = () => {
+  const sound = 'woof'
+  return {
+    talk: () => console.log(sound)
+  }
+}
+const sniffles = dog()
+sniffles.talk() //woof
+```
+- Composition over Inheritance -> Do vs Are, bark vs animal, hasA vs isA
+- Event delegation: Use of Event Bubbling and Target Element
+      - Event Bubbling: When one event is trigger its also triggered on all its DOM ancestors. The event bubbles up from the originating element to the top of the DOM tree.
+      - Target Element: Originating Event
+      - Capturing: the event is first captured by the outermost element and propagated to the inner elements. (opp of event bubbling)
+
+-  Execution Context is the wrapper that wraps the code
+- JavaScript makes a placeholder and defines all the variables and functions as ‘undefined’ before its execution
+- Prototype
+```JavaScript
+String.prototype.reverse = function (){
+  if(!this || this.length <2) return this;
+
+  return this.split('').reverse().join('');
+}
 ```

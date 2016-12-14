@@ -48,7 +48,7 @@
 
 
 
-/* medio */
+/* media */
 @@media (min-width: 801px) {
   body{
     margin: 0 auto;

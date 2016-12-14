@@ -385,7 +385,7 @@ String.prototype.reverse = function (){
   return this.split('').reverse().join('');
 }
 ```
-### Document, WebJS
+### Document, DOM, Events
 ```Javascript
 var btn = document.querySelector('button');
 var h = document.querySelector('h1');

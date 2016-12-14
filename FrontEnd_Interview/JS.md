@@ -429,6 +429,22 @@ sniffles.talk() //woof
 - JavaScript makes a placeholder and defines all the variables and functions as ‘undefined’ before its execution
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
 - JavaScript only hoists declarations, not initializations.
+-  Lexical scoping: in JavaScript, the scope of a variable is defined by its location within the source code (it is apparent lexically) and nested functions have access to variables declared in their outer scope
+-  A closure is a special kind of object that combines two things: a function, and the environment in which that function was created.
+- Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope). In other words, these functions 'remember' the environment in which they were created.
+```JavaScript
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+```
 - Prototype
 ```JavaScript
 String.prototype.reverse = function (){

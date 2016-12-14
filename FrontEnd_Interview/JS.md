@@ -385,3 +385,70 @@ String.prototype.reverse = function (){
   return this.split('').reverse().join('');
 }
 ```
+### Document, WebJS
+```Javascript
+var btn = document.querySelector('button');
+var h = document.querySelector('h1');
+btn.onclick = function() {
+    h.textContent = 'Clicked';
+  }
+var data = document.querySelector('p');
+  data.addEventListerner('click', update());
+
+  function update(){
+    var name = prompt('Whats your name doe');
+    data.textContent = 'Player 1:' + name;
+  }
+  function createParagraph() {
+    var para = document.createElement('p');
+    para.textContent = 'You clicked the button!';
+    document.body.appendChild(para);
+  }
+  var buttons = document.querySelectorAll('button');
+  for(var i = 0; i < buttons.length ; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+
+  var btn = document.querySelector('button'),
+      txt = document.querySelector('p');
+  //btn.addEventListener('click', updateButton);
+
+  btn.onclick = function(){
+    if(btn.textContent=='Start'){
+      btn.textContent = 'Stop';
+      txt.textContent = 'Machine Started';
+    }
+    else{
+      btn.textContent = 'Start';
+      txt.textContent = 'Machine Stopped';
+    }
+  }
+
+  var list = document.querySelector('.output ul');
+  list.innerHTML = '';
+  var cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+  for(var i = 0; i < cities.length; i++) {
+    var input = cities[i];
+    var lower = input.toLowerCase();
+    var firstLetter = lower.slice(0,1);
+    var capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+    var result = capitalized;
+    var listItem = document.createElement('li');
+    listItem.textContent = result;
+    list.appendChild(listItem);
+
+  }
+```
+- onfocus, onblur, ondbclick, window.onkeypress, onmouseover, addEventListerner(), removeEventListener()
+```
+function reqListener () {
+  console.log(this.responseText);
+}
+
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "http://www.example.org/example.txt");
+oReq.responseType = "json";
+oReq.send();
+```

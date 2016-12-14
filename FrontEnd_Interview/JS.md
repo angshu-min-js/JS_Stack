@@ -549,3 +549,15 @@ function loadDoc() {
 </body>
 </html>
 ```
+### Prototyping on console
+```
+(function(){
+var text = console.log;
+console.log = function(txt){
+	text.apply(this, arguments);
+  document.querySelector('h1').innerHTML = txt;
+}
+})();
+
+console.log('xyz');
+```

@@ -377,6 +377,8 @@ sniffles.talk() //woof
 
 -  Execution Context is the wrapper that wraps the code
 - JavaScript makes a placeholder and defines all the variables and functions as ‘undefined’ before its execution
+- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+- JavaScript only hoists declarations, not initializations.
 - Prototype
 ```JavaScript
 String.prototype.reverse = function (){
